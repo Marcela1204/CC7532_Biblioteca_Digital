@@ -67,3 +67,36 @@ fluxo principal:
 
 --- 
 # Interfaces do Sistema
+
+<<interface>> LivroService
++ cadastrarLivro(dadosLivro)
++ editarLivro(idLivro, dadosLivro)
++ listarLivros()
++ pesquisarLivros(filtro)
++ visualizarDetalhesLivro(idLivro)
+
+<br>
+
+<<interface>> UsuarioService
++ cadastrarUsuario(dadosUsuario)
++ atualizarUsuario(idUsuario, dadosUsuario)
++ listarUsuarios()
+
+<br>
+
+<<interface>> EmprestimoService
++ registrarEmprestimo(idUsuario, idLivro)
++ registrarDevolucao(idEmprestimo)
++ renovarEmprestimo(idEmprestimo)
++ visualizarEmprestimosAtivos(idUsuario)
++ validaLeitor(idUsuario)
+
+<br>
+
+<<interface>> HistoricoService
++ acessarHistoricoEmprestimos(idUsuario)
++ acessarHistoricoUsuario(idUsuario)
+
+<br>
+<<interface>> RelatorioService
++ gerarRelatorioEmprestimos(periodo)
