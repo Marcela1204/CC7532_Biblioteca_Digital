@@ -68,35 +68,36 @@ fluxo principal:
 --- 
 # Interfaces do Sistema
 
-<<interface>> LivroService
-+ cadastrarLivro(dadosLivro)
-+ editarLivro(idLivro, dadosLivro)
-+ listarLivros()
-+ pesquisarLivros(filtro)
-+ visualizarDetalhesLivro(idLivro)
+\<\<interface\>\> LivroService<br>
+\+ cadastrarLivro(dadosLivro)<br>
+\+ editarLivro(idLivro, dadosLivro)<br>
+\+ listarLivros()<br>
+\+ pesquisarLivros(filtro)<br>
+\+ visualizarDetalhesLivro(idLivro)<br>
 
 <br>
 
-<<interface>> UsuarioService
-+ cadastrarUsuario(dadosUsuario)
-+ atualizarUsuario(idUsuario, dadosUsuario)
-+ listarUsuarios()
+\<\<interface\>\> UsuarioService<br>
+\+ cadastrarUsuario(dadosUsuario)<br>
+\+ atualizarUsuario(idUsuario, dadosUsuario)<br>
+\+ listarUsuarios()<br>
 
 <br>
 
-<<interface>> EmprestimoService
-+ registrarEmprestimo(idUsuario, idLivro)
-+ registrarDevolucao(idEmprestimo)
-+ renovarEmprestimo(idEmprestimo)
-+ visualizarEmprestimosAtivos(idUsuario)
-+ validaLeitor(idUsuario)
+\<\<interface\>\> EmprestimoService <br>
+\+ registrarEmprestimo(idUsuario, idLivro)<br>
+\+ registrarDevolucao(idEmprestimo)<br>
+\+ renovarEmprestimo(idEmprestimo)<br>
+\+ visualizarEmprestimosAtivos(idUsuario)<br>
+\+ validaLeitor(idUsuario)<br>
 
 <br>
 
-<<interface>> HistoricoService
-+ acessarHistoricoEmprestimos(idUsuario)
-+ acessarHistoricoUsuario(idUsuario)
+\<\<interface\>\>  HistoricoService<br>
+\+ acessarHistoricoEmprestimos(idUsuario)<br>
+\+ acessarHistoricoUsuario(idUsuario)<br>
 
 <br>
-<<interface>> RelatorioService
-+ gerarRelatorioEmprestimos(periodo)
+
+\<\<interface\>\>  RelatorioService<br>
+\+ gerarRelatorioEmprestimos(periodo)<br>
